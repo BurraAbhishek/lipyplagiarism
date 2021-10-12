@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This site is open-source! -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, viewport-fit=cover"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='css/site.light.css')}}"
+        />
+    </head>
+    <body>
+        <div class="appbar">
+            <h1 class="site-title">
+                <a href="/">lipyplagiarism.org</a>
+            </h1>
+            <nav id="topnav" class="hover"></nav>
+        </div>
+        <div id="text-to-check">
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <textarea
+                    name="input_text"
+                    id="input_text"
+                    value="{{ inputtext }}"
+                ></textarea>
+                <input class="check-text" type="submit" value="CHECK FOR PLAGIARISM" />
+            </form>
+        </div>
+        <div id="pdf-to-txt">
+            <form
+                action="/pdfToText/"
+                method="POST"
+                enctype="multipart/form-data"
+            >
+                <input type="file" name="input_text_in_file" />
+                <input type="submit" value="Load PDF" />
+            </form>
+        </div>
+    </body>
+</html>
