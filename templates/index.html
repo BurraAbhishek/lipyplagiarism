@@ -2,24 +2,11 @@
 <html lang="en">
     <!-- This site is open-source! -->
     <head>
-        <meta charset="UTF-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
-        <link
-            rel="stylesheet"
-            type="text/css"
-            href="{{ url_for('static', filename='css/site.light.css')}}"
-        />
+        {% include head %}
+        <title>lipyplagiarism.org • Free Online Plagiarism Checker</title>
     </head>
     <body>
-        <div class="appbar">
-            <h1 class="site-title">
-                <a href="/">lipyplagiarism.org</a>
-            </h1>
-            <nav id="topnav" class="hover"></nav>
-        </div>
+        {% include appbar %}
         <div id="text-to-check">
             <form action="/" method="POST" enctype="multipart/form-data">
                 <textarea
@@ -27,7 +14,11 @@
                     id="input_text"
                     value="{{ inputtext }}"
                 ></textarea>
-                <input class="check-text" type="submit" value="CHECK FOR PLAGIARISM" />
+                <input
+                    class="check-text"
+                    type="submit"
+                    value="CHECK FOR PLAGIARISM"
+                />
             </form>
         </div>
         <div id="pdf-to-txt">
@@ -40,5 +31,32 @@
                 <input type="submit" value="Load PDF" />
             </form>
         </div>
+        <div>
+            <p>
+                Lipyplagiarism is a free(really), libre, no-ads, open-source
+                plagiarism checker.
+                <a href="/about">About lipyplagiarism</a>
+            </p>
+        </div>
+        <nav class="footer">
+            <section>
+                <a href="/faq">FAQ</a>
+            </section>
+            <section>
+                <a href="/contact#help-root">Contact</a>
+            </section>
+            <section>
+                <a href="/terms-of-service">Terms of Service</a>
+            </section>
+            <section>
+                <a href="/privacy">Privacy</a>
+            </section>
+            <section>
+                <a href="/source">Source Code</a>
+            </section>
+            <section>
+                <a href="/changelog">Changelog</a>
+            </section>
+        </nav>
     </body>
 </html>
