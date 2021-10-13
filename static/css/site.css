@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/noto-sans-latin.woff2");
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    src: url("../fonts/noto-sans-bold-latin.woff2");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/roboto-light-latin.woff2");
+}
+
+body {
+    background-color: #ededed;
+    color: #4d4d4d;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    color: #1b78d0;
+    text-decoration: none;
+}
+
+.appbar {
+    padding-top: 0;
+    padding-bottom: 2%;
+}
+
+.site-title,
+.site-title a {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+#input_text {
+    font-size: 1.5rem;
+    height: 50vh;
+    width: 96vw;
+    padding: 1% 1%;
+}
+
+.check-text {
+    font-family: "Roboto Light", sans-serif;
+    width: 98vw;
+    font-size: 1.5rem;
+}
+
+#pdf-to-txt {
+    font-family: "Roboto Light", sans-serif;
+    margin: 1% 0;
+    width: 96vw;
+    border: 1px solid #bababa;
+    background-color: #dedede;
+    padding: 1% 1%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.85em;
+    font-weight: bold;
+    width: 96vw;
+}
+
+.footer section {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.paper {
+    background-color: #ffffff;
+    margin: 1% 1%;
+    padding: 1% 4%;
+    min-height: 80vh;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.paper h1 {
+    font-weight: normal;
+}
+
+.paper h2 {
+    font-weight: normal;
+    padding-bottom: 1%;
+    border-bottom: 1px solid #d59020;
+}
