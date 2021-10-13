@@ -33,6 +33,22 @@ def contact():
             appbar="common/appbar.html"
             )
 
+@app.route('/privacy', methods=['GET'])
+def privacy():
+    return render_template(
+            'docs/privacy.html',
+            head="common/head.html", 
+            appbar="common/appbar.html"
+            )
+
+@app.route('/terms-of-service', methods=['GET'])
+def tos():
+    return render_template(
+            'docs/tos.html',
+            head="common/head.html", 
+            appbar="common/appbar.html"
+            )
+
 @app.route('/source', methods=['GET'])
 def source():
     return render_template(
@@ -41,10 +57,26 @@ def source():
             appbar="common/appbar.html"
             )
 
+@app.route('/changelog', methods=['GET'])
+def changelog():
+    return render_template(
+            'docs/changelog.html',
+            head="common/head.html", 
+            appbar="common/appbar.html"
+            )
+
 @app.route('/how-to-cheat', methods=['GET'])
 def cheat():
     return render_template(
             'docs/cheat.html',
+            head="common/head.html", 
+            appbar="common/appbar.html"
+            )
+
+@app.route('/faq', methods=['GET'])
+def faq():
+    return render_template(
+            'docs/faq.html',
             head="common/head.html", 
             appbar="common/appbar.html"
             )
