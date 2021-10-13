@@ -1,7 +1,9 @@
-import pdftotext
+import PyPDF2
 
 def getTextFromPDF(PDFIn):
-    with open(PDFIn, 'rb') as f:
-        pdf = pdftotext.PDF(f)
-    s = "\n\n".join(pdf)
-    return s
+    pdfReader = PyPDF2.PdfFileReader(PDFIn)
+    s = ""
+    for i in range(0, pdfReader.numPages):
+        page = pdfReader.getPage(i)
+        s += page.extractText()
+    return PDFIn
