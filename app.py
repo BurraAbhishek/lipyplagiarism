@@ -1,7 +1,26 @@
 from flask import Flask, request, render_template
 from conf import routes
+from modules.i18n.i18n import i18n
 
 app = Flask(__name__)
+
+app.jinja_env.globals['i18n'] = i18n
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template(
+        'oops/404.html',
+        head="common/head.html", 
+        appbar="common/appbar.html"
+        )
+
+@app.errorhandler(403)
+def forbidden(e):
+    return render_template(
+        'oops/403.html',
+        head="common/head.html", 
+        appbar="common/appbar.html"
+        )
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
