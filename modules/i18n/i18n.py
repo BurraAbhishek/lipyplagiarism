@@ -1,6 +1,16 @@
-import gettext
+import json
 
-localedir = './locale'
+lang = "fr-FR"
 
-translate = gettext.translation('appname', localedir, fallback=True)
-i18n = translate.gettext
+basedir = "translations/"
+try:
+    destdir = basedir + "dest/site/" + lang + ".json"
+    with open(destdir) as d:
+        data = json.load(d)
+except:
+    srcdir = basedir + "source/site.json"
+    with open(srcdir) as s:
+        data = json.load(s)
+
+def i18n(s):
+    return data[s]
