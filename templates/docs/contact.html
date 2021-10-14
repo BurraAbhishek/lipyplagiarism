@@ -13,7 +13,7 @@
                 <h2>What can we help you with?</h2>
                 <div>
                     <a href="#help-bug" onclick="loadSection('help-bug');">
-                        I want to report a bug
+                        {{ i18n('reportBug') }}
                     </a>
                 </div>
                 <br />
@@ -21,7 +21,7 @@
                     <a
                         href="#help-security"
                         onclick="loadSection('help-security');"
-                        >I want to report a security vulnerability</a
+                        >{{ i18n('reportSecurity') }}</a
                     >
                 </div>
                 <br />
@@ -29,13 +29,13 @@
                     <a
                         href="#help-monetize"
                         onclick="loadSection('help-monetize');"
-                        >Monetizing Lipyplagiarism</a
+                        >{{ i18n('monetizing') }}</a
                     >
                 </div>
                 <br />
                 <div>
                     <a href="#help-buy" onclick="loadSection('help-buy');">
-                        Buying Lipyplagiarism
+                        {{ i18n('buying') }}
                     </a>
                 </div>
                 <br />
@@ -43,7 +43,7 @@
                     <a
                         href="#help-authorize"
                         onclick="loadSection('help-authorize');"
-                        >Authorization to use Lipyplagiarism</a
+                        >{{ i18n('authorizationToUse') }}</a
                     >
                 </div>
             </div>
@@ -52,18 +52,17 @@
                     <a href="#help-root" onclick="loadSection('help-root');">
                         &lt;
                     </a>
-                    I want to report a bug
+                    {{ i18n('reportBug') }}
                 </h2>
                 <p>
-                    If you found a new bug, you may report it
+                    {{ i18n('reportBug1') }}
                     <a
                         href="https://github.com/burraabhishek/lipyplagiarism/issues"
                     >
-                        as a website issue on GitHub.
+                        {{ i18n('reportBug2') }}.
                     </a>
                     <br />
-                    Please describe what the bug looks like, what you expected
-                    to happen instead, and the steps to reproduce the bug.
+                    {{ i18n('reportBug3') }}
                 </p>
             </div>
             <div class="sections" id="help-security">
@@ -71,31 +70,25 @@
                     <a href="#help-root" onclick="loadSection('help-root');">
                         &lt;
                     </a>
-                    I want to report a security vulnerability
+                    {{ i18n('reportSecurity') }}
                 </h2>
-                <p>
-                    Please report security vulnerabilities to
-                    contact@lipyplagiarism.org
-                </p>
+                <p>{{ i18n('reportSecurity1') }} contact@lipyplagiarism.org</p>
             </div>
             <div class="sections" id="help-monetize">
                 <h2>
                     <a href="#help-root" onclick="loadSection('help-root');">
                         &lt;
                     </a>
-                    Monetizing lipyplagiarism
+                    {{ i18n('monetizing') }}
                 </h2>
                 <p>
-                    We are not interested in monetizing lipyplagiarism in any
-                    way.
+                    {{ i18n('monetizing1') }}
                     <br />
                     <br />
-                    We will never display any kind of ads, we won't track our
-                    users, we won't sell or buy traffic or users.
+                    {{ i18n('monetizing2') }}
                     <br />
                     <br />
-                    Please do not send any emails about marketing, tracking or
-                    advertising.
+                    {{ i18n('monetizing3') }}
                 </p>
             </div>
             <div class="sections" id="help-buy">
@@ -103,27 +96,25 @@
                     <a href="#help-root" onclick="loadSection('help-root');">
                         &lt;
                     </a>
-                    Buying lipyplagiarism
+                    {{ i18n('buying') }}
                 </h2>
-                <p>We are not selling, to anyone, for any price. Ever.</p>
+                <p>{{ i18n('buying1') }}</p>
             </div>
             <div class="sections" id="help-authorize">
                 <h2>
                     <a href="#help-root" onclick="loadSection('help-root');">
                         &lt;
                     </a>
-                    Authorization to use lipyplagiarism
+                    {{ i18n('authorizationToUse') }}
                 </h2>
                 <p>
-                    You are welcome to use lipyplagiarism for your activity,
-                    even commercial.
+                    {{ i18n('authorizationToUse1') }}
                     <br />
                     <br />
-                    You can show it in your videos, and you can print
-                    screenshots of lipyplagiarism in your books.
+                    {{ i18n('authorizationToUse2') }}
                     <br />
                     <br />
-                    Credit is appreciated but not required.
+                    {{ i18n('authorizationToUse3') }}
                 </p>
             </div>
         </div>
