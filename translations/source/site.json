@@ -9,6 +9,23 @@
     "sourceCode": "Source Code",
     "changelog": "Changelog",
 
+    "400": "Bad Request",
+    "403": "Access Denied!",
+    "404": "Page not found!",
+    "500": "Internal Server Error",
+    "403why": "You tried to visit a page you're not authorized to access.",
+
+    "howToPlagiarize": "How to plagiarize research papers",
+    "howToPlagiarize1": "Writing a paper is hard, and you just had a great idea.",
+    "howToPlagiarizeBadIdea1": "Instead of working on your research, why not just copy and paste content from other papers?", 
+    "howToPlagiarizeBadIdea2": "We can complete the paper very quickly, and get away with the credits because no one will notice.",
+    "howToPlagiarizeBadEffects": "Unfortunately, a lot of people have the same idea everyday, and it is robbing others of their hard-earned innovative idea and research work.",
+    "howToPlagiarizeWarning1": "Please do not plagiarize other papers.", 
+    "howToPlagiarizeWarning2": "You get nothing out of it, and make innovation and research a worse experience for everyone, yourself included.",
+    "howToPlagiarizePunishment": "Doing so will only invite legal action against you.",
+    "howToPlagiarizeAdvice1": "Instead, why not do all the hard work?",
+    "howToPlagiarizeAdvice2": "It will take longer but be much more rewarding.",
+
     "contactHead": "Contact Lipyplagiarism",
     "whatCanWeHelpYouWith": "What can we help you with?",
     "reportBug": "I want to report a bug",
@@ -26,5 +43,8 @@
     "authorizationToUse": "Authorization to use Lipyplagiarism",
     "authorizationToUse1": "You are welcome to use Lipyplagiarism for your activity, even commercial.",
     "authorizationToUse2": "You can show it in your videos, and you can print screenshots of Lipyplagiarism in your books.",
-    "authorizationToUse3": "Credit is appreciated but not required."
+    "authorizationToUse3": "Credit is appreciated but not required.",
+
+    "tos1": "Do not try to execute DoS, DDoS or other attacks on our servers.",
+    "tos2": "Do not use false patents or otherwise to deny access to this service using fraudulent means."
 }
