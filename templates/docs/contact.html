@@ -3,14 +3,14 @@
     <!-- This site is open-source! -->
     <head>
         {% include head %}
-        <title>Contact • lipyplagiarism.org</title>
+        <title>{{ i18n('contact') }} • lipyplagiarism.org</title>
     </head>
     <body>
         {% include appbar %}
         <div class="paper">
-            <h1>Contact lipyplagiarism</h1>
+            <h1>{{ i18n('contact') }} lipyplagiarism</h1>
             <div class="sections" id="help-root">
-                <h2>What can we help you with?</h2>
+                <h2>{{ i18n('whatCanWeHelpYouWith') }}</h2>
                 <div>
                     <a href="#help-bug" onclick="loadSection('help-bug');">
                         {{ i18n('reportBug') }}

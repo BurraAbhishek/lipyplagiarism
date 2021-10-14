@@ -3,25 +3,19 @@
     <!-- This site is open-source! -->
     <head>
         {% include head %}
-        <title>Terms of Service • lipyplagiarism.org</title>
+        <title>{{ i18n('termsOfService') }} • lipyplagiarism.org</title>
     </head>
     <body>
         {% include appbar %}
         <div class="paper">
-            <h1>Terms of Service</h1>
+            <h1>{{ i18n('termsOfService') }}</h1>
             <h2>TL;DR</h2>
             <ul>
                 <li>
-                    <b>
-                        Do not try to execute DoS, DDoS or other attacks on our
-                        servers.
-                    </b>
+                    <b> {{ i18n('tos1') }} </b>
                 </li>
                 <li>
-                    <b>
-                        Do not use false patents or otherwise to deny access to
-                        this service using fraudulent means.
-                    </b>
+                    <b> {{ i18n('tos2') }} </b>
                 </li>
             </ul>
         </div>
