@@ -25,5 +25,5 @@ External Services:
 Files | Author(s) | License
 --- | --- | ---
 [Font Awesome v4.7 in static/fa](https://github.com/BurraAbhishek/lipyplagiarism/tree/main/static/fa) | [The Font Awesome Team](https://github.com/FortAwesome/Font-Awesome#team) | [CC-BY 4.0, SIL OFL 1.1, MIT](https://github.com/FortAwesome/Font-Awesome/blob/master/LICENSE.txt)
-Noto Sans in public/fonts | [Google](https://fonts.google.com/specimen/Noto+Sans) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
-Roboto in public/fonts | [Christian Robertson](https://fonts.google.com/specimen/Roboto) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Noto Sans in static/fonts | [Google](https://fonts.google.com/specimen/Noto+Sans) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+Roboto in static/fonts | [Christian Robertson](https://fonts.google.com/specimen/Roboto) | [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0)
