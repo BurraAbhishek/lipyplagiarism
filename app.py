@@ -1,10 +1,26 @@
 from flask import Flask, request, render_template
 from conf import routes
-from modules.i18n.i18n import i18n
+from modules.i18n import langs_list
+import json
 
 app = Flask(__name__)
 
-app.jinja_env.globals['i18n'] = i18n
+@app.context_processor
+def i18n():
+    try:
+        lang = request.cookies.get("doclang")
+    except:
+        lang = "en"
+    basedir = "translations/"
+    try:
+        destdir = basedir + "dest/site/" + lang + ".json"
+        with open(destdir) as d:
+            data = json.load(d)
+    except:
+        srcdir = basedir + "source/site.json"
+        with open(srcdir) as s:
+            data = json.load(s)
+    return dict(i18n=data)
 
 @app.errorhandler(404)
 def not_found(e):
@@ -22,6 +38,14 @@ def forbidden(e):
         appbar="common/appbar.html"
         )
 
+@app.errorhandler(400)
+def bad_request(e):
+    return render_template(
+        'oops/400.html',
+        head="common/head.html", 
+        appbar="common/appbar.html"
+        )
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
@@ -31,6 +55,16 @@ def index():
             head="common/head.html", 
             appbar="common/appbar.html"
             )
+
+@app.route('/settings', methods=['GET', 'POST'])
+def settings():
+    return render_template(
+        'settings.html', 
+        inputtext="",
+        head="common/head.html", 
+        appbar="common/appbar.html",
+        langs_list=langs_list.langs_list
+        )
 
 @app.route('/pdfToText/', methods=['POST'])
 def PDFToTextArea():
