@@ -9,7 +9,37 @@
     href="{{ url_for('static', filename='css/site.css')}}"
 />
 <link
+    id="colorThemeStylesheet"
     rel="stylesheet"
     type="text/css"
     href="{{ url_for('static', filename='css/site.light.css')}}"
 />
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ url_for('static', filename='fa/css/fa.css')}}"
+/>
+<script>
+    if (typeof Storage !== "undefined") {
+        document.documentElement.lang = localStorage.getItem("docLang") || "en";
+        document.getElementById("colorThemeStylesheet").href =
+            getColorThemeStatic();
+    }
+    function getColorThemeStatic() {
+        var d = new Date();
+        var theme = "light";
+        var dateTheme = "light";
+        if (d.getHours() < 6 || d.getHours() > 18) {
+            dateTheme = "dark";
+        }
+        if (typeof Storage !== "undefined") {
+            theme = localStorage.getItem("colorTheme") || dateTheme;
+        }
+        if(theme == "light") {
+            var s = "{{ url_for('static', filename='css/site.light.css')}}";
+        } else if(theme == "dark") {
+            var s = "{{ url_for('static', filename='css/site.dark.css')}}";
+        }
+        return s;
+    }
+</script>

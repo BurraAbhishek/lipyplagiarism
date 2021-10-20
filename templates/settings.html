@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- This site is open-source! -->
+    <head>
+        {% include head %}
+        <title>lipyplagiarism.org • Free Online Plagiarism Checker</title>
+    </head>
+    <body>
+        {% include appbar %}
+        <div class="paper">
+            <table class="settings_table">
+                <tr>
+                    <form id="langform" action="/settings" method="POST">
+                        <th>Language</th>
+                        <td>
+                            <select
+                                name="langs-list"
+                                id="langs-list"
+                                onchange="changeDocLang();"
+                            >
+                                {% for i in langs_list %}
+                                <option value="{{ i['langcode'] }}">
+                                    {{ i['language'] }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </form>
+                </tr>
+                <tr>
+                    <form id="themeform" action="/settings" method="POST">
+                        <th>{{ i18n['theme'] }}</th>
+                        <td>
+                            <select id="themes-list" onchange="changeTheme();">
+                                <option value="light">{{ i18n['light'] }}</option>
+                                <option value="dark">{{ i18n['dark'] }}</option>
+                            </select>
+                        </td>
+                    </form>
+                </tr>
+            </table>
+            <script>
+                function changeDocLang() {
+                    if (typeof Storage !== "undefined") {
+                        localStorage.setItem(
+                            "docLang",
+                            document.getElementById("langs-list").value
+                        );
+                    }
+                    document.cookie =
+                            "doclang=" +
+                            document.getElementById("langs-list").value +
+                            "; samesite=lax";
+                    document.getElementById("langform").submit();
+                }
+                function changeTheme() {
+                    if (typeof Storage !== "undefined") {
+                        localStorage.setItem(
+                            "colorTheme",
+                            document.getElementById("themes-list").value
+                        );
+                        window.location.href = "/settings"
+                    }
+                }
+                if (typeof Storage !== "undefined") {
+                    try {
+                        document.getElementById("langs-list").value =
+                            localStorage.getItem("docLang") || "en";
+                    } catch (e) {}
+                    try {
+                        document.getElementById("themes-list").value =
+                            localStorage.getItem("colorTheme") || "light";
+                    } catch (e) {}
+                }
+            </script>
+        </div>
+    </body>
+</html>
