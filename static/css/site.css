@@ -29,6 +29,12 @@ a {
 .appbar {
     padding-top: 0;
     padding-bottom: 2%;
+    width: 96vw;
+    display: flex;
+}
+
+.site-title {
+    width: 100%;
 }
 
 .site-title,
@@ -41,23 +47,27 @@ a {
     text-decoration: none;
 }
 
+#topnav {
+    float: right;
+}
+
 #input_text {
     font-size: 1.5rem;
     height: 50vh;
-    width: 96vw;
+    width: 95vw;
     padding: 1% 1%;
 }
 
 .check-text {
     font-family: "Roboto Light", sans-serif;
-    width: 98vw;
+    width: 97vw;
     font-size: 1.5rem;
 }
 
 #pdf-to-txt {
     font-family: "Roboto Light", sans-serif;
     margin: 1% 0;
-    width: 96vw;
+    width: 95vw;
     border: 1px solid #bababa;
     background-color: #dedede;
     padding: 1% 1%;
@@ -66,14 +76,16 @@ a {
 .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     font-size: 0.85em;
     font-weight: bold;
-    width: 96vw;
+    width: 95vw;
 }
 
 .footer section {
     padding-left: 1%;
     padding-right: 1%;
+    margin-right: 1.5em;
 }
 
 .paper {
@@ -93,4 +105,14 @@ a {
     font-weight: normal;
     padding-bottom: 1%;
     border-bottom: 1px solid #d59020;
+}
+
+.settings_table {
+    width: 100%;
+    padding: 1% 1%;
+    font-size: 1.5em;
+}
+
+.settings_table select {
+    font-size: 0.75em;
 }
