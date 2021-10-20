@@ -15,6 +15,10 @@
     "500": "Erreur Interne du Serveur",
     "403why": "Vous avez essayé de visiter une page à laquelle vous n'êtes pas autorisé à accéder.",
 
+    "theme": "Arrière-plan",
+    "light": "Lumineux",
+    "dark": "Sombre",
+
     "howToPlagiarize": "Comment plagier des articles de recherche",
     "howToPlagiarize1": "Écrire un article est difficile, et vous venez d'avoir une excellente idée.",
     "howToPlagiarizeBadIdea1": "Au lieu de travailler sur vos recherches, pourquoi ne pas simplement copier et coller le contenu d'autres articles?", 

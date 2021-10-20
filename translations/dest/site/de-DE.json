@@ -15,6 +15,10 @@
     "500": "Interner Serverfehler",
     "403why": "Sie haben versucht, eine Seite aufzurufen, für die Sie nicht autorisiert sind.",
 
+    "theme": "Hintergrund",
+    "light": "Hell",
+    "dark": "Dunkel",
+
     "howToPlagiarize": "So plagiieren Sie Artikel",
     "howToPlagiarize1": "Einen Artikel zu schreiben ist schwer und du hattest einfach eine tolle Idee.",
     "howToPlagiarizeBadIdea1": "Warum nicht einfach Inhalte aus anderen Papieren kopieren und einfügen, anstatt an Ihrer Forschung zu arbeiten?", 

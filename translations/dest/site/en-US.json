@@ -15,6 +15,10 @@
     "500": "Internal Server Error",
     "403why": "You tried to visit a page you're not authorized to access.",
 
+    "theme": "Background",
+    "light": "Light",
+    "dark": "Dark",
+
     "howToPlagiarize": "How to plagiarize research papers",
     "howToPlagiarize1": "Writing a paper is hard, and you just had a great idea.",
     "howToPlagiarizeBadIdea1": "Instead of working on your research, why not just copy and paste content from other papers?", 
