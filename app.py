@@ -68,7 +68,15 @@ def settings():
 
 @app.route('/pdfToText/', methods=['POST'])
 def PDFToTextArea():
-    return routes.PDFToText()
+    try:
+        return routes.PDFToText()
+    except:
+        return render_template(
+            'index.html', 
+            inputtext="",
+            head="common/head.html", 
+            appbar="common/appbar.html"
+            ) 
 
 @app.route('/about', methods=['GET'])
 def about():
@@ -133,3 +141,8 @@ def faq():
             head="common/head.html", 
             appbar="common/appbar.html"
             )
+
+@app.route('/check-plain-text', methods=['POST'])
+def check_text_initial():
+    result = request.form
+    return routes.checkTextInitial(result)
