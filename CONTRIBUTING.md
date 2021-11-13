@@ -4,6 +4,7 @@
 
 - [Set up your development environment](https://flask.palletsprojects.com/en/2.0.x/installation/).
 - Code formatting uses [PEP8](https://www.python.org/dev/peps/pep-0008/) for Python and [Prettier](https://prettier.io) for the rest of this application.
+- All modules related to detecting plagiarized text should go to `/modules/plagiarism/`. Nowhere else. Nothing related to the website UI should go there. You can add those elsewhere.
 
 ## I want to report a bug or a problem about Lipyplagiarism
 
