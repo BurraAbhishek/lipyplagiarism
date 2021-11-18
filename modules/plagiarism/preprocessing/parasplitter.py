@@ -1,5 +1,6 @@
 import nltk
 
-def parasplit(text):
-    # Split the input text into paragraphs.
-    print()
+def sbd(text):
+    sent_tokenizer = nltk.tokenize.PunktSentenceTokenizer()
+    sentences = sent_tokenizer.tokenize(text)
+    return sentences
