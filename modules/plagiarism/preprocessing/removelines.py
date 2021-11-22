@@ -5,5 +5,8 @@ def removeR(s):
 def removeN(s):
     return s.replace("\n", " ")
 
+
 def removeLines(s):
+    """ Replace \\r and \\n with a space. """
+
     return removeR(removeN(s))
