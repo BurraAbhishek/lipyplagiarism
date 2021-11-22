@@ -1,0 +1,6 @@
+numpy
+sklearn
+nltk
+pypdf2
+bs4
+html2text
