@@ -11,4 +11,5 @@ def text_to_list(text):
     a = s.split("\r\n")
     b = ignoretopics.ignore_topics(a)
     b = accenter.deaccent(b)
+    b = ignoretopics.ignore_small(b, 5)
     return b
