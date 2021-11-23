@@ -1,4 +1,5 @@
 import re
+from modules.plagiarism.preprocessing import tokenizer
 
 def ignore_topics_list():
     """ 
@@ -33,3 +34,14 @@ def ignore_topics(sentences):
     if re.match("\S", sentences[n - 1]) or (len(sentences[n - 1]) == 0):
         sentences.pop()
     return sentences
+
+
+def ignore_small(sentences, maxlength):
+    """ Exclude very small sentences (common headings) """
+
+    newSentence = []
+    for i in sentences:
+        j = tokenizer.word_tokenize(i)
+        if len(j) > maxlength:
+            newSentence.append(i)
+    return newSentence
