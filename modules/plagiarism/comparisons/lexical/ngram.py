@@ -4,7 +4,7 @@ def jaccardDistance(x, y, n):
     _w1, _w2, a, b = common_ngrams(x, y, n)
     l = len(set(a).union(set(b)))
     if l == 0:
-        return 0
+        return 1
     else:
         return len(set(a).intersection(set(b))) / l
 
