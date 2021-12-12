@@ -1,0 +1,19 @@
+ENTERPRISE END USER LICENSE AGREEMENT
+Musarubra (as defined below) and Company (as identified in the Grant Letter) agree to the terms of this Agreement (as defined below).
+By downloading, installing, copying, accessing or using this software, Company agrees to this Agreement. If Company is accepting this Agreement on behalf of another person or other legal entity, Company represents and warrants that Company has full authority to bind that person or legal entity to this Agreement. Company must ensure that End Users (as defined below) comply with this Agreement and is responsible for End Users’ compliance with or breach of this Agreement.
+If Company does not agree to this Agreement, Company must:
+• not download, install, copy, access or use the Software; and
+• Promptly return the Software and proof of entitlement to the party from whom Company acquired the Software.
+Capitalized terms used in this Agreement have the meaning assigned to them in Section 15.1 or elsewhere in this Agreement. The interpretation clause in Section 15.2 sets out the rules of interpretation for this Agreement.
+1. LICENSE GRANT; PROPRIETARY RIGHTS
+1.1. Right to use the Software: Subject to the terms and conditions of this Agreement, Musarubra grants Company a non-exclusive, non-transferable right to use the Software listed in the Grant Letter solely for Company’s own internal business operations. In this Agreement, to use the Software includes to download, install and access the Software. Company is not granted rights to Updates and Upgrades unless Company has purchased Support (or a service subscription granting rights to Updates and Upgrades).
+2. COPY AND USE TERMS
+2.1. Product Entitlement: The use of the Software depends on the licenses purchased (e.g. nodes) and is subject to the Product Entitlement definitions.
+2.2. Multiple platforms/bundles: If the Software supports multiple platforms or if Company receives the Software bundled with other software, the total number of devices on which all versions of the Software is installed may not exceed Company’s Product Entitlement. Certain Software licensed as part of a suite-based Musarubra Product may also require the purchase of a separate Musarubra server license to use the Software on certain types of servers, in each case as specified in the Documentation.
+2.3. Term: The license is effective for the limited time specified in in the Grant Letter. If no term is specified, the licenses will be perpetual.
+2.4. Copies: Company may copy the Software as reasonably necessary for back-up, archival or disaster recovery purposes.
+References
+A
+B
+C
+D

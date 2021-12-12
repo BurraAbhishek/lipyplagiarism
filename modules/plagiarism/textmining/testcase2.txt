@@ -1,0 +1,19 @@
+ENTERPRISE user LICENSE AGREEMENT
+Musarubra (as outlined below) and Company (as known within the Grant Letter) conform to the terms of this Agreement (as defined below).
+By downloading, installing, copying, accessing or exploitation this software, Company agrees to the present Agreement. If Company is acceptive this Agreement on behalf of another person or different legal entity, Company represents and warrants that Company has full authority to bind that person or legal entity to this Agreement. Company should make sure that finish Users (as defined below) comply with this Agreement and is chargeable for finish Users’ compliance with or breach of this Agreement.
+If Company doesn't conform to this Agreement, Company must:
+• not download, install, copy, access or use the package; and
+• Promptly come the Software and proof of claim to the party from whom Company nonheritable the Software.
+Capitalized terms employed in this Agreement have the that means allotted to them in Section 15.1 or elsewhere during this Agreement. The interpretation clause in Section 15.2 sets out the foundations of interpretation for this Agreement.
+1. LICENSE GRANT; PROPRIETARY RIGHTS
+1.1. Right to use the Software: Subject to the terms and conditions of this Agreement, Musarubra grants Company a non-exclusive, non-transferable right to use the package listed within the Grant Letter alone for Company’s own internal business operations. during this Agreement, to use the package includes to download, install and access the package. Company isn't granted rights to Updates and Upgrades unless Company has purchased Support (or a service subscription granting rights to Updates and Upgrades).
+2. COPY AND USE TERMS
+2.1. Product claim: the utilization of the Software depends on the licenses purchased (e.g. nodes) and is subject to the merchandise Entitlement definitions.
+2.2. Multiple platforms/bundles: If the package supports multiple platforms or if Company receives the package bundled with different software, the whole variety of devices on that all versions of the package is put in might not exceed Company’s Product Entitlement. sure package authorised as a part of a suite-based Musarubra Product may additionally need the acquisition of a separate Musarubra server license to use the package on certain kinds of servers, in every case as per the Documentation.
+2.3. Term: The license is effective for the restricted time specified in within the Grant Letter. If no term is specified, the licenses are perpetual.
+2.4. Copies: Company might copy the package as moderately necessary for back-up, depository or disaster recovery purposes.
+References
+A
+B
+C
+D
