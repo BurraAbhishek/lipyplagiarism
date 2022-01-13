@@ -20,11 +20,15 @@ def process_dataset(dataset):
         i[1] = preprocess.preprocess_train(i[1])[0]
     return dataset
 
+print("Fetching training models...")
 y = process_dataset(get_train_df('modules/plagiarism/comparisons/datasets/final/train.tsv'))
+print("Training models (1 of 3)...")
 X, Y = ds_splitter.dsSplitter(y)
+print("Training models (2 of 3)...")
 
 lrModel = logistic.train_lr(X, Y)
 rfModel = randomforest.rfModel(X, Y)
+print("Training models (3 of 3)...")
 
 y1 = process_dataset(get_train_df('modules/plagiarism/comparisons/datasets/final/test.tsv'))
 s1 = "I am a boy"
