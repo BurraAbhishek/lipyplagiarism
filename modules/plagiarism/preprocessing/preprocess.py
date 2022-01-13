@@ -20,7 +20,7 @@ def preprocess(text):
     t = removebullets.removebullets(t)
     for i in t:
         s.append(tokenizer.removeWhiteSpace(i))
-    return s
+    return list(set(s))
 
 
 def preprocessURL(text):
