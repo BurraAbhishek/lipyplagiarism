@@ -21,7 +21,7 @@ def process_dataset(dataset):
     return dataset
 
 
-def get_model_dataset(modelfile)
+def get_model_dataset(modelfile):
     print("Fetching training models...")
     y = process_dataset(get_train_df(modelfile))
     print("Generating datasets (1 of 2)...")
