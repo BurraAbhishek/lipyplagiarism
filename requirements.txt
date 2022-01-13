@@ -1,6 +1,12 @@
-numpy
-sklearn
-nltk
-pypdf2
-bs4
-html2text
+flask = "*"
+numpy = "*"
+scikit-learn = "*"
+nltk = "*"
+pypdf2 = "*"
+bs4 = "*"
+html2text = "*"
+gensim = "*"
+spacy = "*"
+
+# // Spacy English models. You can download models for any language by replacing "en".
+python -m spacy download en_core_web_lg
